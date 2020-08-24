@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*, h1, button{
+    font-family: Barlow Semi Condensed;
+}
+:root {
+    --Dark-Text: hsl(229, 25%, 31%);
+    --Score-Text: hsl(229, 64%, 46%);
+    --Header-Outline: hsl(217, 16%, 45%);
+}
+
+.container {
+    height: 100vh;
+    background: linear-gradient(to bottom,hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .topbar {
+    width: 80%;
+    height: 120px;
+    margin: 25px;
+    padding: 10px;
+    border: 3px solid var(--Header-Outline);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .title {
+    margin: 10px;
+    margin-left: 25px;
+}
+.container .title h1{
+    font-size: 25px;
+    color: white;
+    font-family: "Barlow Semi Condensed";
+}
+.container .topbar .score{
+    width: 40%;
+    height: 80%;
+    max-height: 100px;
+    max-width: 150px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .topbar .score h1{
+    font-size: 15px;
+    color: var(--Score-Text);
+}
+.container .topbar .score div{
+    font-size: 40px;
+    color: var(--Header-Outline);
+    margin-top: -5px;
+}
+.container .game {
+    width: 85%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+}
+.container .game .game-choices {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    height: 220px;
+}
+.container .game .paper{
+    width: 100px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    border-radius: 50%;
+    background: white;
+    border: 13px solid hsl(230, 89%, 62%);
+}
+
+.container .game .scissors{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    border-radius: 50%;
+    border: 13px solid hsl(39, 89%, 49%);
+    background: white;
+}
+.container .game .rock{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    border-radius: 50%;
+    border: 13px solid hsl(349, 71%, 52%);
+    background: white;
+}
+.container .game .game-choices .choice1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+.container .game .game-choices .choice2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+.container .game .game-choices .choice3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+}
+.container .game .game-choices .choice3 button{
+    width: 180px;
+    height: 70px;
+    border-radius: 20px;
+    border: 0;
+    background: var(--Dark-Text);
+}
+.container .game .game-choices .choice3 button:hover{
+    background: var(--Header-Outline);
+}
+
+#paper,
+#scissor,
+#rock{
+    transition: transform .2s;
+}
+#paper:hover,
+#scissor:hover,
+#rock:hover{
+    transform: scale(1.15);
+}
+.container .rules{
+    width: 35%;
+    font-family: sans-serif;
+    max-width: 300px;
+    font-size: 18px;
+    border: 2px solid rgb(136, 130, 130);
+    color: rgb(136, 130, 130);
+    border-radius: 10px;
+    height: 50px;
+    background: none;
+}
+
+.disputa {
+    width: 500px;
+    background: black;
+}
+.container .game .game-choices .choice3 h1{
+    font-size: 28px;
+    color: white;
+}
+
+
+@media(min-width: 600px){
+    .container .game .game-choices {
+        width: 500px;
+        height: 300px;
+    }
+    .container .game .paper,
+    .container .game .scissors,
+    .container .game .rock{
+        width: 140px;
+        height: 140px;
+    }
+}

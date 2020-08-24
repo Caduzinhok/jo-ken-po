@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Barlow+Semi+Condensed">
+</head>
+<body>
+    <div class="container">
+      <div class="topbar">
+        <div class="title">
+          <h1>Rock</h1>
+          <h1>Paper</h1>
+          <h1>Scissors</h1>
+        </div>
+        <div class="score">
+          <h1>Score</h1>
+          <div class="value" id ='value'>12</div>
+        </div>
+      </div>
+      <div class="game">
+        <div class="choices">
+          <div class="game-choices">
+            <div class="choice1" id = 'choice1'>
+              <div class="paper distance"id = 'paper'>
+                <img src="images/icon-paper.svg" alt="" id = 'paper2'>
+              </div>
+            </div>
+            <div class="choice2" id = 'choice2'>
+              <div class="scissors distance" id= 'scissor'>
+              <img src="images/icon-scissors.svg" alt="" id = "scissor2">
+            </div>
+          </div>
+            <div class="choice3" id = 'choice3'>
+              <div class="rock distance bottom" id = 'rock'>
+                <img src="images/icon-rock.svg" alt="" id ="rock2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <button class="rules">Rules</button>
+    </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Caduzinhok">Carlos Andrade</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
