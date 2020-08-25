@@ -63,20 +63,24 @@
     margin-top: -5px;
 }
 .container .game {
+    position: relative;
+    overflow: hidden;
     width: 85%;
     height: 500px;
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
 
 }
 .container .game .game-choices {
+    position: absolute;
+    left: 35%;
+    bottom: 25%;
     display: flex;
     flex-wrap: wrap;
-    width: 360px;
-    height: 220px;
 }
 .container .game .paper{
+    position: relative;
     width: 100px;
     max-height: 200px;
     display: flex;
@@ -89,6 +93,7 @@
 }
 
 .container .game .scissors{
+    position:relative;
     width: 100px;
     display: flex;
     align-items: center;
@@ -99,6 +104,7 @@
     background: white;
 }
 .container .game .rock{
+    position: relative;
     width: 100px;
     display: flex;
     align-items: center;
@@ -109,6 +115,7 @@
     background: white;
 }
 .container .game .game-choices .choice1{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,6 +123,7 @@
     height: 50%;
 }
 .container .game .game-choices .choice2{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,6 +131,7 @@
     height: 50%;
 }
 .container .game .game-choices .choice3{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -185,3 +194,33 @@
         height: 140px;
     }
 }
+
+
+.container .game .gameplay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 100%;
+    top: 12%;
+    justify-content: center;
+    width: 50%;
+}
+
+.container .game .gameplay .choose1{
+    margin: 20px 30px;
+    position: relative;
+}
+.container .game .gameplay .choose2{
+    margin: 20px 30px;
+    position: relative;
+}
+.container .game .gameplay #youwin{
+    color: white;
+    width: 80px;
+    margin: 0 5px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
