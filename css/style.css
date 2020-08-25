@@ -163,7 +163,7 @@
 .container .rules{
     width: 35%;
     font-family: sans-serif;
-    max-width: 300px;
+    max-width: 350px;
     font-size: 18px;
     border: 2px solid rgb(136, 130, 130);
     color: rgb(136, 130, 130);
@@ -192,6 +192,14 @@
     .container .game .rock{
         width: 140px;
         height: 140px;
+    }
+    .container .game .game-choices {
+        position: absolute;
+        left: 35%;
+        bottom: 25%;
+    }
+    .container .game .gameplay {
+        left: 100%;
     }
 }
 

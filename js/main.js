@@ -25,7 +25,6 @@ var rock3 = `<div class="rock distance bottom" id = 'rock'>
 </div>`;
 document.getElementById('paper').addEventListener('click',forChoice1);
 function forChoice1() {
-    console.log('ok')
     choose1.innerHTML = `${paper3}`;
     choose2.innerHTML = ``;
     const random = house();
@@ -44,7 +43,7 @@ function forChoice2() {
     gameplay.style.left = "25%";
     setTimeout(back,2500);
 }
-document.getElementById('rock2').addEventListener('click',forChoice3);
+document.getElementById('rock').addEventListener('click',forChoice3);
 function forChoice3() {
     choose1.innerHTML = `${rock3}`;
     choose2.innerHTML = ``;
