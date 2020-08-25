@@ -73,7 +73,9 @@ function compare(casa,valor) {
         youwin.innerHTML = `<h1>Empate</h1>`;
     }
     else if(casa == 0 && valor == 1){
-        qtd--;
+        if(qtd > 0){
+            qtd--;
+        }
         value.innerHTML = `${qtd}`
         youwin.innerHTML = `<h1>Você Perdeu</h1>`;
         
@@ -84,7 +86,9 @@ function compare(casa,valor) {
         youwin.innerHTML = `<h1>Você Ganhou</h1>`;
     }
     else if(casa == 1 && valor == 2){
-        qtd--;
+        if(qtd > 0){
+            qtd--;
+        }
         value.innerHTML = `${qtd}`
         youwin.innerHTML = `<h1>Você Perdeu</h1>`;
 
@@ -95,7 +99,9 @@ function compare(casa,valor) {
         youwin.innerHTML = `<h1>Você Ganhou</h1>`;
     }
     else if(casa == 2 && valor == 0){
-        qtd--;
+        if(qtd > 0){
+            qtd--;
+        }
         value.innerHTML = `${qtd}`
         youwin.innerHTML = `<h1>Você Perdeu</h1>`;
         
